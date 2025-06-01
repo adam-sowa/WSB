@@ -1,0 +1,17 @@
+{
+    "name": "weatherAPP",
+    "short_name": "weatherAPP",
+    "theme_color": "#00d0ea",
+    "background_color": "#42abff",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/WSB/",
+    "icons" :[
+        {
+            "src" : "./icon.png",
+            "sizes" : "512x512",
+            "type" : "image/png"
+        }
+    ]
+  }
