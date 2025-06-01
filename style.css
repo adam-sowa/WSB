@@ -1,0 +1,179 @@
+/* Resetowanie marginesów i box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styl ogólny */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    min-height: 100vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+/* Nagłówek */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #004466;
+}
+
+/* Sekcja wyszukiwania */
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.search input {
+    padding: 0.7rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 1rem;
+}
+
+.search button {
+    padding: 0.7rem 1.2rem;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.search button:hover {
+    background-color: #005fa3;
+}
+
+.error_message {
+    color: red;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Sekcja pogody */
+.weather {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.weather .city_name {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.weather div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.weather_img {
+    width: 60px;
+    height: 60px;
+}
+
+.temp {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.weather p {
+    text-align: center;
+    margin: 0.3rem 0;
+}
+
+/* Sekcja zanieczyszczenia powietrza */
+.air_pollution {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.air_pollution h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.air_pollution div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pollution_img {
+    width: 40px;
+    height: 40px;
+}
+
+.value {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Stopka */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: #444;
+    margin-top: auto;
+}
+
+/* Responsywność */
+@media (min-width: 600px) {
+    .search {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .search input {
+        flex: 1;
+        margin-right: 0.5rem;
+    }
+
+    .search button {
+        flex-shrink: 0;
+    }
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.95rem;
+    color: #ffffff;
+    background-color: #004466;
+    border-top: 2px solid #007acc;
+    margin-top: auto;
+    border-radius: 12px 12px 0 0;
+}
+
+footer p {
+    margin: 0;
+}
